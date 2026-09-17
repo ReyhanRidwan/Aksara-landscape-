@@ -23,10 +23,12 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: Trees, title: "Desain Lanskap", text: "Desain taman yang kreatif dan fungsional sesuai kebutuhan dan karakter ruang Anda." },
-  { icon: DraftingCompass, title: "Pembangunan Lanskap", text: "Pengerjaan taman dari awal hingga selesai dengan eksekusi yang rapi dan tepat waktu." },
-  { icon: Flower2, title: "Taman Vertikal", text: "Solusi penghijauan vertikal untuk mempercantik dan mengoptimalkan ruang terbatas." },
-  { icon: Sprout, title: "Perawatan Taman", text: "Perawatan rutin oleh tim profesional agar taman selalu sehat, indah, dan terawat." },
+  { image: villaImage, title: "Taman Tropis", text: "Menghadirkan nuansa alam tropis yang rimbun dan menyegarkan di halaman rumah Anda." },
+  { image: "https://res.cloudinary.com/di6ziqvtp/image/upload/v1789651691/33addd37-03b1-47d7-a0a2-6ab589b00c96.png", title: "Saung Gazebo", text: "Pembuatan tempat bersantai yang nyaman dengan material alami pilihan." },
+  { image: "https://res.cloudinary.com/di6ziqvtp/image/upload/v1789651844/55cfe003-955c-4796-a0ab-8c2cb09f1b50.png", title: "Zen Garden / Japanese Garden", text: "Taman bergaya Jepang yang minimalis, memberikan ketenangan dan kedamaian." },
+  { image: "https://res.cloudinary.com/di6ziqvtp/image/upload/v1789652062/25cbb80a-6db7-4448-b7c5-5f6d03861610.png", title: "Taman Kering", text: "Solusi taman indah dengan perawatan minimal dan hemat air." },
+  { image: verticalImage, title: "Vertical Garden", text: "Pemanfaatan dinding atau ruang vertikal menjadi taman yang asri dan estetik." },
+  { image: "https://res.cloudinary.com/di6ziqvtp/image/upload/v1779518460/kolam_hias_ca6nfj.jpg", title: "Kolam Koi", text: "Pembuatan kolam ikan koi dengan sistem filter terbaik untuk memperindah lanskap Anda." },
 ];
 
 const projects = [
@@ -86,7 +88,7 @@ function Index() {
         <img src={aboutImage} alt="Taman rumah tropis karya Aksara Landscape" loading="lazy" width={1200} height={720} />
       </section>
 
-      <section id="layanan" className="services section-pad"><div className="wrap"><h2 className="section-title">Layanan Kami</h2><div className="service-grid">{services.map(({ icon: Icon, title, text }) => <article className="service-card" key={title}><span className="icon-circle"><Icon /></span><div><h3>{title}</h3><p>{text}</p><a href="#kontak">Selengkapnya <ArrowRight /></a></div></article>)}</div></div></section>
+      <section id="layanan" className="services section-pad"><div className="wrap"><h2 className="section-title">Layanan Kami</h2><div className="service-grid">{services.map(({ image, title, text }) => <article className="service-card" key={title}><div className="service-img"><img src={image} alt={title} /></div><div className="service-content"><h3>{title}</h3><p>{text}</p><a href={`https://wa.me/628984987720?text=${encodeURIComponent("Halo Aksara Landscape, saya ingin berkonsultasi mengenai " + title)}`} target="_blank" rel="noopener noreferrer" className="button button-green service-wa">Book an Appointment <MessageCircle /></a></div></article>)}</div></div></section>
 
       <section id="proyek" className="projects section-pad"><div className="wrap"><h2 className="section-title">Proyek Kami</h2><div className="filters"><span className="active">Semua</span><span>Residensial</span><span>Komersial</span><span>Taman Vertikal</span><span>Perawatan</span></div><div className="project-grid">{projects.map(([image, title]) => <figure key={title}><img src={image} alt={title} loading="lazy" width={816} height={816} /><figcaption>{title}</figcaption></figure>)}</div></div></section>
 
