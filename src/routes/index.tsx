@@ -42,7 +42,15 @@ const steps = [
 ];
 
 function Logo({ light = false }: { light?: boolean }) {
-  return <a href="#beranda" className={`brand ${light ? "brand-light" : ""}`} aria-label="Aksara Landscape"><span className="brand-mark">A</span><span><strong>AKSARA</strong><small>LANDSCAPE</small></span></a>;
+  return (
+    <a href="#beranda" className="brand" aria-label="Logo">
+      <img
+        src="https://res.cloudinary.com/di6ziqvtp/image/upload/v1789619920/8a693c8f-7302-4b7c-9841-79c571dae7ad.png"
+        alt="Aksara Landscape Logo"
+        style={{ width: "160px", height: "auto", display: "block", borderRadius: "6px", objectFit: "contain", maxHeight: "60px" }}
+      />
+    </a>
+  );
 }
 
 function Index() {
@@ -86,8 +94,8 @@ function Index() {
 
       <section id="artikel" className="cta-band"><h2>Siap Mewujudkan Ruang Hijau Impian Anda?</h2><p>Hubungi kami sekarang untuk konsultasi gratis dan solusi terbaik untuk lanskap Anda.</p><a className="button button-light" href="#kontak">Konsultasi Gratis</a></section>
 
-      <footer id="kontak"><div className="wrap footer-grid"><div><Logo light /><p>Menyediakan solusi lanskap terbaik dengan sentuhan alami dan profesional.</p><div className="socials"><Instagram /><MessageCircle /><Youtube /></div></div><div><h3>Menu</h3><a href="#beranda">Beranda</a><a href="#tentang">Tentang Kami</a><a href="#layanan">Layanan</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a></div><div><h3>Layanan</h3><span>Desain Lanskap</span><span>Pembangunan Lanskap</span><span>Taman Vertikal</span><span>Perawatan Taman</span></div><div><h3>Kontak</h3><span><MapPin />Jl. Hijau Asri No. 10, Jakarta Selatan</span><span><Mail />info@aksaralandscape.com</span><span><Phone />+62 812 3456 7890</span><span><Instagram />www.aksaralandscape.com</span></div></div><div className="copyright">© 2026 Aksara Landscape. All rights reserved.</div></footer>
-      <a className="whatsapp" href="https://wa.me/6281234567890" aria-label="Hubungi melalui WhatsApp"><MessageCircle /></a>
+      <footer id="kontak"><div className="wrap footer-grid"><div><Logo light /><p>Menyediakan solusi lanskap terbaik dengan sentuhan alami dan profesional.</p><div className="socials"><Instagram /><MessageCircle /><Youtube /></div></div><div><h3>Menu</h3><a href="#beranda">Beranda</a><a href="#tentang">Tentang Kami</a><a href="#layanan">Layanan</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a></div><div><h3>Layanan</h3><span>Desain Lanskap</span><span>Pembangunan Lanskap</span><span>Taman Vertikal</span><span>Perawatan Taman</span></div><div><h3>Kontak</h3><span><MapPin />Sawangan, Depok, Jawa Barat</span><span><Mail />aksaralandscape@gmail.com</span><span><Phone />+62 898 4987 720</span><span><Instagram />www.aksaralandscape.com</span></div></div><div className="copyright">© 2026 Aksara Landscape. All rights reserved.</div></footer>
+      <a className="whatsapp" href="https://wa.me/628984987720" target="_blank" rel="noopener noreferrer" aria-label="Hubungi melalui WhatsApp"><MessageCircle /></a>
     </main>
   );
 }
