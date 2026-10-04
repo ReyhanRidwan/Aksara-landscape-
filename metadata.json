@@ -1,0 +1,6 @@
+{
+  "name": "Aksara Landscape",
+  "description": "Jasa desain dan pembangunan lanskap profesional, taman minimalis, vertical garden, saung gazebo, zen garden, taman kering, dan kolam koi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

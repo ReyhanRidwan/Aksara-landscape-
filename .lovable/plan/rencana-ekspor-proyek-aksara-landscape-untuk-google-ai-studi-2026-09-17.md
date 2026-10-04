@@ -1,17 +1,21 @@
 # Rencana: Ekspor Proyek Aksara Landscape untuk Google AI Studio
 
 ## Tujuan
+
 Menyiapkan paket lengkap berisi kode, gambar, dan instruksi agar website Aksara Landscape dapat dibuka/dipahami di Google AI Studio. Hasil akhir adalah folder/ZIP yang berisi semua sumber daya proyek.
 
 ## Batasan yang perlu dipahami
+
 Google AI Studio adalah platform eksperimen AI (Gemini), bukan hosting website atau IDE React. AI Studio tidak bisa menjalankan website TanStack Start / React / Vite secara langsung dan tidak bisa menampilkan preview website yang sama persis dengan Lovable.
 
 Yang bisa dilakukan di AI Studio:
+
 - Mengunggah seluruh source code agar AI bisa membaca, menganalisis, atau mengusulkan perubahan.
 - Mengunggah gambar-gambar aset agar AI melihat visual yang dipakai.
 - Meminta AI Studio menjelaskan struktur kode atau membuatkan kode baru berdasarkan proyek ini.
 
 Yang tidak bisa dilakukan:
+
 - Menjalankan website secara live/preview di AI Studio.
 - Menghasilkan URL publish otomatis dari AI Studio.
 
@@ -38,11 +42,14 @@ Yang tidak bisa dilakukan:
    - Hasil akhir: satu file ZIP yang siap diunduh dan diunggah ke Google AI Studio.
 
 ## Deliverable
+
 - File `Aksara-Landscape-Export.zip` yang tersedia di Files (lokasi `/mnt/documents/`).
 - File `AI_STUDIO_GUIDE.md` di dalam ZIP.
 
 ## Catatan penting untuk pengguna
+
 Setelah paket diunggah ke Google AI Studio, Anda bisa bertanya ke Gemini seperti:
+
 - "Jelaskan struktur website ini."
 - "Tunjukkan bagian kode untuk section hero."
 - "Bagaimana cara mengubah warna tema?"
